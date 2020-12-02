@@ -9,3 +9,6 @@ var Daughter = Daughter.fontcolor("blue");
 document.write(Mom); // displayed variable Mom in the html document. //
 document.write("<br>") // put a line break in the text. //
 document.write(5*12); // displayed the result of the equation. //
+function displayDate() {  // naming a funtion and defining it. //
+    document.getElementById("demo").innerHTML = Date(); // putting the value of Date into the html element with the Id of "demo". //
+}
