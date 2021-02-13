@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <script>
+            $(document).ready(function() {
+                $("html").append( // using jQuery to add these elements to the html file
+                    "<body>\
+                        <div id='container'>\
+                            <div id='inner'>\
+                                <h1>Basic jQuery</h1>\
+                                <p id='1'>Paragraph 1</p>\
+                                <p id='2'>Paragraph 2</p>\
+                                <p id='3'>Paragraph 3</p>\
+                            </div>\
+                        </div>\
+                    </body>"
+                );
+                $("#2").css({"color":"red"}); // adding css to paragraph 2 using jQuery
+                $("#3").click(function() { // using jQuery to hide the h1 tag when paragraph 3 is clicked
+                    $('h1').hide();
+                });
+                $("#1").on({ // changing the content of paragraph 1 when the user has hovered over it
+                    "mouseover": function() { document.getElementById("1").innerHTML = "You hovered over this."; }
+                });
+                $("#2").click(function() { // hiding paragraph 2 when it is clicked
+                    $("#2").hide()
+                });
+            });
+
+
+
+
+        </script>
+    </body>
+</html>
