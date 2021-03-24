@@ -55,6 +55,13 @@
 
 body {
     background-color: Azure;
+    opacity: 1;
+    transition: 1s;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
 }
 
 h1 {

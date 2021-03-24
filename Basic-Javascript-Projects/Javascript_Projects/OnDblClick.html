@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Double Click Event</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p id="paragraph" ondblclick="myFunction()">Double click this paragraph</p>
+
+        <script>
+            function myFunction() {
+                document.getElementById("paragraph").innerHTML = "You double clicked this paragraph!"
+            }
+        </script>
+    </body>
+</html>
